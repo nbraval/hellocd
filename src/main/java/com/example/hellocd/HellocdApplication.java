@@ -6,6 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class HellocdApplication {
 
+	@RequestMapping("/")
+	String home() {
+		return "Hello Continuous Delivery!";
+	}
+	
 	public static void main(String[] args) {
 		SpringApplication.run(HellocdApplication.class, args);
 	}
